@@ -1,0 +1,93 @@
+.view-root {
+    min-height: 100vh;
+    color: white;
+    background: rgb(23,23,23);
+
+    h1 {
+        font-weight: bolder;
+    }
+
+    &.background-one {
+        animation: grad-anim 10s ease-in-out infinite;
+        background: linear-gradient(30deg, #06292b, #121111, #2f0404);
+        background-size: 300%;
+    }
+
+    &.background-two {
+        animation: grad-anim 10s ease-in-out infinite;
+        background: linear-gradient(69deg, #300202, #042730, #362602);
+        background-size: 300%;
+    }
+
+    &.background-three {
+        animation: grad-anim 10s ease-in-out infinite;
+        background: linear-gradient(69deg, #330138, #2c2b01, #010b41);
+        background-size: 300%;
+    }
+
+    &.background-four {
+        animation: grad-anim 10s ease-in-out infinite;
+        background: linear-gradient(69deg, #312202, #05012c, #014101);
+        background-size: 300%;
+    }
+
+    span.animated-text.title-text {
+        word-break: break-word;
+    }
+    
+    img {
+        width: 25vw;
+    }
+}
+
+.bgImage {
+    background-size: cover;
+    background-position: center;
+    padding: 5vh 15vw!important;
+    min-height: 90vh;
+}
+
+.hero {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh 7vw;
+    flex-grow: 1;
+
+    &.center {
+        align-items: center;
+        text-align: center;
+    }
+
+    &.full-width {
+        flex-grow: 1;
+    }
+
+    &.right {
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 4rem!important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        text-align: left!important;
+    }
+}

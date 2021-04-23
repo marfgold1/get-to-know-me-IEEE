@@ -1,0 +1,29 @@
+html, body, .root {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    //min-height: 100vh;
+}
+
+@keyframes grad-anim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+span.animated-text {
+    animation: grad-anim 10s ease infinite;
+    background: linear-gradient(69deg, rgb(17, 228, 196), rgb(228, 38, 38), rgb(255, 213, 24), rgb(240, 30, 222));
+    background-size: 300%;
+    font-weight: bolder;
+  
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

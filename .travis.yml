@@ -1,0 +1,10 @@
+services:
+  - docker
+
+before_install:
+- docker login ghcr.io -u $GHCR_USERNAME -p $GHCR_PAT
+- docker build -t $GHCR_REPO .
+- docker tag $GHCR_REPO:latest ghcr.io/$GHCR_REPO:latest
+- docker push ghcr.io/$GHCR_REPO:latest
+
+scripts: 'true'
